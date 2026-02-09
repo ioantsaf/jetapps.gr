@@ -116,12 +116,38 @@
         <h1>JetApps</h1>
         <h2>Something new is getting ready to launch</h2>
 
-        <!-- Verification line -->
-        <p style="margin-top: 20px; font-size: 12px; opacity: 0.8;">
-            Domain jetapps.gr is owned and controlled by Ioannis Tsafaras
+        <!-- Contact / Support -->
+        <details style="margin-top: 18px; padding-top: 14px; border-top: 1px solid rgba(148, 163, 184, 0.25);">
+            <summary style="cursor: pointer; list-style: none; font-size: 14px; font-weight: 600; color: #a5b4fc;">
+                Contact
+            </summary>
+            <div style="margin-top: 12px;">
+                <p style="margin: 0; font-size: 13px; opacity: 0.9;">
+                    Support &amp; inquiries: <a id="contactEmail" href="#"
+                                                style="color: #67e8f9; text-decoration: none;">Email us</a>
+                </p>
+                <details style="margin-top: 10px; font-size: 12px; opacity: 0.8;">
+                    <summary style="cursor: pointer; list-style: none;">JetApps (IOANNIS TSAFARAS KAI SIA L.P.)
+                    </summary>
+                </details>
+            </div>
+        </details>
+        <p style="margin-top: 14px; font-size: 12px; opacity: 0.7;">
+            Domain jetapps.gr is owned and controlled by Ioannis Tsafaras.
         </p>
 
     </div>
 </div>
+<script>
+    (function () {
+        const user = "info";
+        const domain = "jetapps.gr";
+        const email = user + "@" + domain;
+        const a = document.getElementById("contactEmail");
+        if (!a) return;
+        a.textContent = email;
+        a.href = "mailto:" + email;
+    })();
+</script>
 </body>
 </html>
